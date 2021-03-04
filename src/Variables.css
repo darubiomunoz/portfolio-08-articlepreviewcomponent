@@ -1,0 +1,14 @@
+:root {
+    --layout-mobile: 375px;
+    --layout-desktop: 1440px;
+
+    --color-option1: hsl(217, 19%, 35%);
+    --color-option2: hsl(214, 17%, 51%);
+    --color-option3: hsl(212, 23%, 69%);
+    --color-option4: hsl(210, 46%, 95%);
+
+    --font-size-base: 1.3rem;
+    --font-familiy-headings: 'Manrope', sans-serif;
+    --font-weight-normal: 500;
+    --font-weight-bold: 700;
+}
