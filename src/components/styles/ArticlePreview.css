@@ -9,3 +9,22 @@
     border-top-left-radius: var(--border-radius-base);
     border-top-right-radius: var(--border-radius-base);
 }
+
+.card-body {
+    width: 80%;
+    padding: 0;
+    margin: 2rem auto;
+}
+
+.card-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-option2);
+}
+
+.card-text {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-option3);
+}
