@@ -1,6 +1,6 @@
 .card {
     width: 80%;
-    background-color: var(--color-option4);
+    background-color: #FFF;
     border: none;
     border-radius: var(--border-radius-base);
 }
@@ -27,4 +27,46 @@
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
     color: var(--color-option3);
+}
+
+.card-info {
+    width: 80%;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-img-profile {
+    width: 4.5rem;
+    border-radius: var(--border-radius-round);
+}
+
+.card-profile {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-name {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-option2);
+}
+
+.card-date {
+    font-weight: var(--font-weight-normal);
+    color: var(--color-option3);
+}
+
+.card-button {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-option4);
+    border-radius: var(--border-radius-round);
+    border: none;
 }
