@@ -1,8 +1,14 @@
+import React from 'react';
 import './App.css';
 
-function App() {
+import ArticlePreview from './components/ArticlePreview';
+
+
+const App = () => {
   return (
-    <h1>Ohhh shit... Here we go again.</h1>
+    <div className="App">
+      <ArticlePreview />
+    </div>
   );
 }
 

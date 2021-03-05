@@ -1,7 +1,23 @@
 @import-normalize;
 
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: '';
+  font-size: 62.5%;
+  font-family: var(--font-family-headings);
+}
+
+body {
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--color-option3);
+}
+
+.root {
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
 }
