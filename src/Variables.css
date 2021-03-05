@@ -11,4 +11,6 @@
     --font-family-headings: 'Manrope', sans-serif;
     --font-weight-normal: 500;
     --font-weight-bold: 700;
+
+    --border-radius-base: 1.5rem;
 }

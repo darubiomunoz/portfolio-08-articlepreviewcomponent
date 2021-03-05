@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/ArticlePreview.css';
 
 import drawersImage from '../assets/images/drawers.jpg';
 
@@ -7,8 +8,10 @@ const ArticlePreview = () => {
         <div className="card">
             <img src={drawersImage} className="card-img-top" alt="..." />
             <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 className="card-title">Shift the overall look and feel by adding these wonderful 
+                touches to furniture in your home</h5>
+                <p className="card-text">Ever been in a room and felt like something was missing? Perhaps 
+                it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
                 <a href="/" className="btn btn-primary">Go somewhere</a>
             </div>
         </div>

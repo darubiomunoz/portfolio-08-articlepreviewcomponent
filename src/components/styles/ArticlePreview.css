@@ -1,0 +1,11 @@
+.card {
+    width: 80%;
+    background-color: var(--color-option4);
+    border: none;
+    border-radius: var(--border-radius-base);
+}
+
+.card-img-top {
+    border-top-left-radius: var(--border-radius-base);
+    border-top-right-radius: var(--border-radius-base);
+}
