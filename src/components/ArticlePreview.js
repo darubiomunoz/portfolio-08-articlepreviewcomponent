@@ -4,6 +4,9 @@ import './styles/ArticlePreview.css';
 import drawersImage from '../assets/images/drawers.jpg';
 import profileImage from '../assets/images/avatar-michelle.jpg';
 import iconShare from '../assets/images/icon-share.svg';
+import iconFacebook from '../assets/images/icon-facebook.svg';
+import iconTwitter from '../assets/images/icon-twitter.svg';
+import iconPinterest from '../assets/images/icon-pinterest.svg';
 
 const ArticlePreview = ({ name, date }) => {
     return (
@@ -16,12 +19,19 @@ const ArticlePreview = ({ name, date }) => {
                 it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
             </div>
             <div className="card-info">
-                <img src={profileImage} className="card-img-profile" alt="Photograph of the article's writer" />
+                <img src={profileImage}className="card-img-profile" alt="Photograph of the article's writer" />
                 <div className="card-profile">
                     <h5 className="card-name">{name}</h5>
                     <time className="card-date">{date}</time>
                 </div>
                 <button className="card-button"><img src={iconShare} className="card-icon" alt="Share icon" /></button>
+            </div>
+            <div className="card-share ">
+                <p className="card-legend">S H A R E</p>
+                <img src={iconFacebook} className="card-icon-facebook" alt="Photograph of the article's writer" />
+                <img src={iconTwitter} className="card-icon-twitter" alt="Photograph of the article's writer" />
+                <img src={iconPinterest} className="card-icon-pinterest" alt="Photograph of the article's writer" />
+                <button className="card-button change-color"><img src={iconShare} className="card-icon" alt="Share icon" /></button>
             </div>
         </div>
     );

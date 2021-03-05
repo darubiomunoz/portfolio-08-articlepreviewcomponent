@@ -29,15 +29,18 @@
     color: var(--color-option3);
 }
 
-.card-info {
-    width: 80%;
-    margin: 1.5rem auto;
+.card-info,
+.card-share {
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .card-img-profile {
+    margin: 1.5rem 0;
     width: 4.5rem;
     border-radius: var(--border-radius-round);
 }
@@ -69,4 +72,34 @@
     background-color: var(--color-option4);
     border-radius: var(--border-radius-round);
     border: none;
+}
+
+.card-share {
+    border-bottom-left-radius: var(--border-radius-base);
+    border-bottom-right-radius: var(--border-radius-base);
+    background-color: var(--color-option1);
+}
+
+.card-legend {
+    margin: 0;
+    font-size: var(--font-size-base);
+    color: var(--color-option3);
+}
+
+.card-icon-facebook,
+.card-icon-twitter,
+.card-icon-pinterest {
+    margin: 2rem 0;
+}
+
+.invisible {
+    display: none;
+}
+
+.change-color {
+    background-color: var(--color-option2);
+}
+
+.card-icon:focus {
+    fill: #FFF;
 }
