@@ -1,5 +1,6 @@
 .card {
     width: 80%;
+    margin: 5rem 0;
     background-color: #FFF;
     border: none;
     border-radius: var(--border-radius-base);
@@ -18,13 +19,13 @@
 
 .card-title {
     margin-bottom: 1.5rem;
-    font-size: 1.4rem;
+    font-size: var(--font-size-base);
     font-weight: var(--font-weight-bold);
     color: var(--color-option2);
 }
 
 .card-text {
-    font-size: var(--font-size-base);
+    font-size: 1rem;
     font-weight: var(--font-weight-normal);
     color: var(--color-option3);
 }
@@ -72,6 +73,7 @@
     background-color: var(--color-option4);
     border-radius: var(--border-radius-round);
     border: none;
+    cursor: pointer;
 }
 
 .card-share {
@@ -90,6 +92,7 @@
 .card-icon-twitter,
 .card-icon-pinterest {
     margin: 2.75rem 0;
+    cursor: pointer;
 }
 
 .invisible {
