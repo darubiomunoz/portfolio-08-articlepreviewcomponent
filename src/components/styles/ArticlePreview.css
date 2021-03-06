@@ -62,7 +62,8 @@
     color: var(--color-option3);
 }
 
-.card-button {
+.card-button,
+.card-button-active {
     width: 3rem;
     height: 3rem;
     margin: 0;
@@ -99,7 +100,11 @@
     display: none;
 }
 
-.change-color {
+.change-color-option1 {
+    background-color: var(--color-option1);
+}
+
+.change-color-option2 {
     background-color: var(--color-option2);
 }
 
@@ -111,6 +116,7 @@
     width: 0;
     height: 0;
     position: absolute;
+    z-index: 200;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid var(--color-option1);
@@ -155,7 +161,7 @@
     }
     
     .card-box {
-        width: 50%;
+        width: 60%;
         padding: 0 1.5rem;
         position: relative;
         position: absolute;
@@ -165,13 +171,13 @@
         align-items: center;
         background-color: var(--color-option1);
         border-radius: var(--border-radius-base);
-        top: -4rem;
-        right: -4.75rem;
+        top: -5rem;
+        right: -6.55rem;
     }
 
     .card-icon-facebook,
     .card-icon-twitter,
     .card-icon-pinterest {
-        margin: 1rem 0;
+        margin: 1.5rem 0;
     }
 }

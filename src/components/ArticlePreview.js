@@ -10,23 +10,45 @@ import iconPinterest from '../assets/images/icon-pinterest.svg';
 
 const ArticlePreview = ({ name, date }) => {
     const [ clicked, setClicked ] = useState(false);
-    const [ desktop, setDesktop ] = useState(false);
+
+    const screen = window.screen.width;
 
     const handleClick = event => {
         event.preventDefault();
 
         const cardInfo = document.querySelector('.card-info');
         const cardShare = document.querySelector('.card-share');
+        const cardBox = document.querySelector('.card-box');
+        const cardButton = document.querySelector('.card-button');
+        const cardIcon = document.querySelector('.card-icon');
 
-        if(!clicked) {
+        const mobileClickActive = () => {
             setClicked(true);
             cardInfo.classList.add('invisible');
             cardShare.classList.remove('invisible');
-        } else {
-            setClicked(false);
-            cardShare.classList.add('invisible');
-            cardInfo.classList.remove('invisible');
         }
+        const mobileClickInactive = () => {
+            setClicked(false);
+            cardInfo.classList.remove('invisible');
+            cardShare.classList.add('invisible');
+        }
+        const desktopClickActive = () => {
+            setClicked(true);
+            cardBox.classList.remove('invisible');
+            cardButton.classList.add('change-color-option1');
+            cardIcon.classList.add('card-icon-active');
+        }
+        const desktopClickInactive = () => {
+            setClicked(false);
+            cardBox.classList.add('invisible');
+            cardButton.classList.remove('change-color-option1');
+            cardIcon.classList.remove('card-icon-active');
+        }
+        
+        if(screen < 1024 && !clicked) mobileClickActive();
+        if(screen < 1024 && clicked) mobileClickInactive();
+        if(screen >= 1024 && !clicked) desktopClickActive();
+        if(screen >= 1024 && clicked) desktopClickInactive();
     }
 
     return (
@@ -47,7 +69,7 @@ const ArticlePreview = ({ name, date }) => {
                 <button className="card-button" onClick={event => handleClick(event)}>
                     <img src={iconShare} className="card-icon" alt="Share icon" />
                 </button>
-                <div className="card-box">
+                <div className="card-box invisible">
                     <p className="card-legend">S H A R E</p>
                     <img src={iconFacebook} className="card-icon-facebook" alt="Photograph of the article's writer" />
                     <img src={iconTwitter} className="card-icon-twitter" alt="Photograph of the article's writer" />
@@ -60,7 +82,7 @@ const ArticlePreview = ({ name, date }) => {
                 <img src={iconFacebook} className="card-icon-facebook" alt="Photograph of the article's writer" />
                 <img src={iconTwitter} className="card-icon-twitter" alt="Photograph of the article's writer" />
                 <img src={iconPinterest} className="card-icon-pinterest" alt="Photograph of the article's writer" />
-                <button className="card-button change-color" onClick={event => handleClick(event)}>
+                <button className="card-button-active change-color-option2" onClick={event => handleClick(event)}>
                     <img src={iconShare} className="card-icon-active" alt="Share icon" />
                 </button>
             </div>
