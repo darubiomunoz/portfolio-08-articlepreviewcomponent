@@ -31,7 +31,7 @@ const ArticlePreview = ({ name, date }) => {
                 <img src={iconFacebook} className="card-icon-facebook" alt="Photograph of the article's writer" />
                 <img src={iconTwitter} className="card-icon-twitter" alt="Photograph of the article's writer" />
                 <img src={iconPinterest} className="card-icon-pinterest" alt="Photograph of the article's writer" />
-                <button className="card-button change-color"><img src={iconShare} className="card-icon" alt="Share icon" /></button>
+                <button className="card-button change-color"><img src={iconShare} className="card-icon-active" alt="Share icon" /></button>
             </div>
         </div>
     );
