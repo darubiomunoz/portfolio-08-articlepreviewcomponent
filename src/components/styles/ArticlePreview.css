@@ -107,6 +107,16 @@
     filter: brightness(300%);
 }
 
+.triangle-down {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--color-option1);
+    bottom: -10px;
+}
+
 @media (min-width: 1024px) {
     .card {
         width: 50%;
@@ -141,5 +151,27 @@
     .card-info {
         grid-area: info;
         height: 100%;
+        position: relative;
+    }
+    
+    .card-box {
+        width: 50%;
+        padding: 0 1.5rem;
+        position: relative;
+        position: absolute;
+        z-index: 200;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--color-option1);
+        border-radius: var(--border-radius-base);
+        top: -4rem;
+        right: -4.75rem;
+    }
+
+    .card-icon-facebook,
+    .card-icon-twitter,
+    .card-icon-pinterest {
+        margin: 1rem 0;
     }
 }

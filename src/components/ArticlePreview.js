@@ -47,6 +47,13 @@ const ArticlePreview = ({ name, date }) => {
                 <button className="card-button" onClick={event => handleClick(event)}>
                     <img src={iconShare} className="card-icon" alt="Share icon" />
                 </button>
+                <div className="card-box">
+                    <p className="card-legend">S H A R E</p>
+                    <img src={iconFacebook} className="card-icon-facebook" alt="Photograph of the article's writer" />
+                    <img src={iconTwitter} className="card-icon-twitter" alt="Photograph of the article's writer" />
+                    <img src={iconPinterest} className="card-icon-pinterest" alt="Photograph of the article's writer" />
+                    <span className="triangle-down"></span>
+            </div>
             </div>
             <div className="card-share invisible">
                 <p className="card-legend">S H A R E</p>
