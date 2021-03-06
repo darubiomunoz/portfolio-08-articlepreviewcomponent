@@ -106,3 +106,36 @@
 .card-icon-active {
     filter: brightness(300%);
 }
+
+@media (min-width: 1024px) {
+    .card {
+        width: 60%;
+        height: 30%;
+        display: grid;
+        grid-template-areas:
+                    "image image image body body body body"
+                    "image image image body body body body"
+                    "image image image info info info info";
+    }
+    
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+        grid-area: image;
+        border-radius: 0;
+        border-top-left-radius: var(--border-radius-base);
+        border-bottom-left-radius: var(--border-radius-base);
+    }
+    
+    .card-body {
+        grid-area: body;
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .card-info {
+        grid-area: info;
+        height: 100%;
+    }
+}
