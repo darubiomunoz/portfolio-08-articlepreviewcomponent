@@ -10,6 +10,7 @@ import iconPinterest from '../assets/images/icon-pinterest.svg';
 
 const ArticlePreview = ({ name, date }) => {
     const [ clicked, setClicked ] = useState(false);
+    const [ desktop, setDesktop ] = useState(false);
 
     const handleClick = event => {
         event.preventDefault();

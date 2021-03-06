@@ -109,7 +109,7 @@
 
 @media (min-width: 1024px) {
     .card {
-        width: 60%;
+        width: 50%;
         height: 30%;
         display: grid;
         grid-template-areas:
@@ -126,12 +126,16 @@
         border-top-left-radius: var(--border-radius-base);
         border-bottom-left-radius: var(--border-radius-base);
     }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
     
     .card-body {
         grid-area: body;
         width: 100%;
         margin: 0;
-        padding: 2rem;
+        padding: 1rem 3rem;
     }
 
     .card-info {
