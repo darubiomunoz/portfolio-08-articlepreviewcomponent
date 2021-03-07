@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.80f94099.chunk.css",
+    "main.js": "/static/js/main.c9e27da1.chunk.js",
+    "main.js.map": "/static/js/main.c9e27da1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0b15a7bc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0b15a7bc.js.map",
+    "static/css/2.2295ac45.chunk.css": "/static/css/2.2295ac45.chunk.css",
+    "static/js/2.ee90334d.chunk.js": "/static/js/2.ee90334d.chunk.js",
+    "static/js/2.ee90334d.chunk.js.map": "/static/js/2.ee90334d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.2295ac45.chunk.css.map": "/static/css/2.2295ac45.chunk.css.map",
+    "static/css/main.80f94099.chunk.css.map": "/static/css/main.80f94099.chunk.css.map",
+    "static/js/2.ee90334d.chunk.js.LICENSE.txt": "/static/js/2.ee90334d.chunk.js.LICENSE.txt",
+    "static/media/drawers.631135b0.jpg": "/static/media/drawers.631135b0.jpg",
+    "static/media/icon-facebook.1e9b3338.svg": "/static/media/icon-facebook.1e9b3338.svg",
+    "static/media/icon-pinterest.45264b1d.svg": "/static/media/icon-pinterest.45264b1d.svg",
+    "static/media/icon-share.890102fe.svg": "/static/media/icon-share.890102fe.svg",
+    "static/media/icon-twitter.45735e3b.svg": "/static/media/icon-twitter.45735e3b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b15a7bc.js",
+    "static/css/2.2295ac45.chunk.css",
+    "static/js/2.ee90334d.chunk.js",
+    "static/css/main.80f94099.chunk.css",
+    "static/js/main.c9e27da1.chunk.js"
+  ]
+}
