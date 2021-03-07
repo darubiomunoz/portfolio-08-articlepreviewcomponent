@@ -133,7 +133,7 @@ Diego Rubio
 [Linkedin](https://www.linkedin.com/in/darmdev/)
 darubiomunoz@gmail.com
 
-Project Link: [https://darubiomunoz.github.io/portfolio-07-faqaccordioncard](https://darubiomunoz.github.io/portfolio-07-faqaccordioncard)
+Project Link: [https://darubiomunoz.github.io/portfolio-08-articlepreviewcomponent](https://darubiomunoz.github.io/portfolio-08-articlepreviewcomponent)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## 8. Acknowledgements :clap:
