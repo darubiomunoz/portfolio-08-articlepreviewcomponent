@@ -70,37 +70,37 @@ const ArticlePreview = ({ name, date }) => {
 
     return (
         <div className="card">
-            <img src={drawersImage} className="card-img-top" tabindex="0" alt="Photograph of the article representing green drawers" />
+            <img src={drawersImage} className="card-img-top" tabIndex="0" alt="Photograph of the article representing green drawers" />
             <div className="card-body">
-                <h5 className="card-title" tabindex="0">Shift the overall look and feel by adding these wonderful 
+                <h5 className="card-title" tabIndex="0">Shift the overall look and feel by adding these wonderful 
                 touches to furniture in your home</h5>
-                <p className="card-text" tabindex="0">Ever been in a room and felt like something was missing? Perhaps 
+                <p className="card-text" tabIndex="0">Ever been in a room and felt like something was missing? Perhaps 
                 it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
             </div>
             <div className="card-info">
-                <img src={profileImage}className="card-img-profile" tabindex="0" alt="Profile photograph of the article's writer" />
+                <img src={profileImage}className="card-img-profile" tabIndex="0" alt="Profile photograph of the article's writer" />
                 <div className="card-profile">
-                    <h5 className="card-name" tabindex="0">{name}</h5>
-                    <time className="card-date" tabindex="0">{date}</time>
+                    <h5 className="card-name" tabIndex="0">{name}</h5>
+                    <time className="card-date" tabIndex="0">{date}</time>
                 </div>
                 <button className="card-button" onClick={event => handleClick(event)}>
-                    <img src={iconShare} className="card-icon" tabindex="0" alt="Share icon - Press to check or close sharing options" />
+                    <img src={iconShare} className="card-icon" tabIndex="0" alt="Share icon - Press to check or close sharing options" />
                 </button>
                 <div className="card-box invisible" aria-live="polite">
-                    <p className="card-legend" tabindex="0">SHARE</p>
-                    <img src={iconFacebook} className="card-icon-facebook" tabindex="0" alt="Share in Facebook" />
-                    <img src={iconTwitter} className="card-icon-twitter" tabindex="0" alt="Share in Twitter" />
-                    <img src={iconPinterest} className="card-icon-pinterest" tabindex="0" alt="Share in Pinterest" onBlur={() => handleBlur()} />
+                    <p className="card-legend" tabIndex="0">SHARE</p>
+                    <img src={iconFacebook} className="card-icon-facebook" tabIndex="0" alt="Share in Facebook" />
+                    <img src={iconTwitter} className="card-icon-twitter" tabIndex="0" alt="Share in Twitter" />
+                    <img src={iconPinterest} className="card-icon-pinterest" tabIndex="0" alt="Share in Pinterest" onBlur={() => handleBlur()} />
                     <span className="triangle-down" aria-hidden="true"></span>
             </div>
             </div>
             <div className="card-share invisible" aria-live="polite">
-                <p className="card-legend" tabindex="0">SHARE</p>
-                <img src={iconFacebook} className="card-icon-facebook" tabindex="0" alt="Share in Facebook" />
-                <img src={iconTwitter} className="card-icon-twitter" tabindex="0" alt="Share in Twitter" />
-                <img src={iconPinterest} className="card-icon-pinterest" tabindex="0" alt="Share in Pinterest" />
+                <p className="card-legend" tabIndex="0">SHARE</p>
+                <img src={iconFacebook} className="card-icon-facebook" tabIndex="0" alt="Share in Facebook" />
+                <img src={iconTwitter} className="card-icon-twitter" tabIndex="0" alt="Share in Twitter" />
+                <img src={iconPinterest} className="card-icon-pinterest" tabIndex="0" alt="Share in Pinterest" />
                 <button className="card-button-active change-color-option2" onClick={event => handleClick(event)}>
-                    <img src={iconShare} className="card-icon-active" tabindex="0" alt="Share icon - Press to close sharing options" />
+                    <img src={iconShare} className="card-icon-active" tabIndex="0" alt="Share icon - Press to close sharing options" />
                 </button>
             </div>
         </div>
