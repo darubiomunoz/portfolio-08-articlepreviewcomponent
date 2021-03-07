@@ -48,7 +48,7 @@
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>v
+  </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
@@ -59,7 +59,7 @@
 
 Challenge from [frontmentor.io](https://www.frontendmentor.io/challenges) to develop a component and I chose to code this project in reactJS as base technology because in want to specialize on it. :smile:
 
-Excelent short project where I could put into practice some css concepts like the grid, overall it wasn't difficult to code so next time I'll try to make something a bit more complex and learn new things about React :stars:
+Excellent short project where I could put into practice some css concepts like the grid, overall it wasn't difficult to code so next time I'll try to make something a bit more complex and learn new things about React :stars:
 
 ### Built With :computer:
 
