@@ -8,7 +8,7 @@ import iconFacebook from '../assets/images/icon-facebook.svg';
 import iconTwitter from '../assets/images/icon-twitter.svg';
 import iconPinterest from '../assets/images/icon-pinterest.svg';
 
-const ArticlePreview = ({ name, date }) => {
+const ComponentLogic = () => {
     const [ clicked, setClicked ] = useState(false);
 
     const screen = window.screen.width;
@@ -50,6 +50,13 @@ const ArticlePreview = ({ name, date }) => {
         if(screen >= 1024 && !clicked) desktopClickActive();
         if(screen >= 1024 && clicked) desktopClickInactive();
     }
+
+    return { handleClick };
+
+}
+
+const ArticlePreview = ({ name, date }) => {
+    const { handleClick } = ComponentLogic();
 
     return (
         <div className="card">
