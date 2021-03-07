@@ -85,7 +85,9 @@
 
 .card-legend {
     margin: 0;
+    letter-spacing: .5rem;
     font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
     color: var(--color-option3);
 }
 
