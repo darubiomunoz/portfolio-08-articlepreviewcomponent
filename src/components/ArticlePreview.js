@@ -81,21 +81,21 @@ const ArticlePreview = ({ name, date }) => {
                 <img src={profileImage}className="card-img-profile" tabIndex="0" alt="Profile photograph of the article's writer" />
                 <div className="card-profile">
                     <h5 className="card-name" tabIndex="0">{name}</h5>
-                    <time className="card-date" tabIndex="0">{date}</time>
+                    <p className="card-date" tabIndex="0">{date}</p>
                 </div>
                 <button className="card-button" onClick={event => handleClick(event)}>
-                   <img src={iconShare} className="card-icon" tabIndex="0" alt="Share icon - Press to check or close sharing options" />
+                   <img src={iconShare} className="card-icon" alt="Share icon - Press to check or close sharing options" />
                 </button>
                 <div className="card-box invisible" aria-live="polite">
                     <p className="card-legend" tabIndex="0">SHARE</p>
                     <a href="https://www.facebook.com" target="_blank">
-                        <img src={iconFacebook} className="card-icon-facebook" tabIndex="0" alt="Share in Facebook" />
+                        <img src={iconFacebook} className="card-icon-facebook" alt="Share in Facebook" />
                     </a>
                     <a href="https://www.twitter.com" target="_blank">
-                        <img src={iconTwitter} className="card-icon-twitter" tabIndex="0" alt="Share in Twitter" />
+                        <img src={iconTwitter} className="card-icon-twitter" alt="Share in Twitter" />
                     </a>
                     <a href="https://www.pinterest.com" target="_blank">
-                        <img src={iconPinterest} className="card-icon-pinterest" tabIndex="0" alt="Share in Pinterest" onBlur={() => handleBlur()} />
+                        <img src={iconPinterest} className="card-icon-pinterest" alt="Share in Pinterest" onBlur={() => handleBlur()} />
                     </a>
                     <span className="triangle-down" aria-hidden="true"></span>
             </div>
@@ -103,16 +103,16 @@ const ArticlePreview = ({ name, date }) => {
             <div className="card-share invisible" aria-live="polite">
                 <p className="card-legend" tabIndex="0">SHARE</p>
                 <a href="https://www.facebook.com" target="_blank">
-                    <img src={iconFacebook} className="card-icon-facebook" tabIndex="0" alt="Share in Facebook" />
+                    <img src={iconFacebook} className="card-icon-facebook" alt="Share in Facebook" />
                 </a>
                 <a href="https://www.twitter.com" target="_blank">
-                    <img src={iconTwitter} className="card-icon-twitter" tabIndex="0" alt="Share in Twitter" />
+                    <img src={iconTwitter} className="card-icon-twitter" alt="Share in Twitter" />
                 </a>
                 <a href="https://www.pinterest.com" target="_blank">
-                    <img src={iconPinterest} className="card-icon-pinterest" tabIndex="0" alt="Share in Pinterest" />
+                    <img src={iconPinterest} className="card-icon-pinterest" alt="Share in Pinterest" />
                 </a>
                 <button className="card-button-active change-color-option2" onClick={event => handleClick(event)}>
-                    <img src={iconShare} className="card-icon-active" tabIndex="0" alt="Share icon - Press to close sharing options" />
+                    <img src={iconShare} className="card-icon-active" alt="Share icon - Press to close sharing options" />
                 </button>
             </div>
         </div>
