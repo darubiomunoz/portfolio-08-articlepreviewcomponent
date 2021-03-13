@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './styles/ArticlePreview.css';
 
 import drawersImage from '../assets/images/drawers.jpg';
@@ -10,7 +10,8 @@ import iconPinterest from '../assets/images/icon-pinterest.svg';
 
 const ComponentLogic = () => {
     const [ clicked, setClicked ] = useState(false);
-
+    let reference = useRef(null);
+    let referenceButton = useRef(null);
     const screen = window.screen.width;
 
     const handleClick = event => {
@@ -19,17 +20,34 @@ const ComponentLogic = () => {
         else setClicked(false);
     }
 
+    /* const handleClickOutside = event => {
+        if(reference.current && !reference.current.contains(event.target)) setClicked(false);
+    } */
+
     const handleBlur = event => {
         event.preventDefault();
         setClicked(false);
     }
 
-    return { handleClick, handleBlur, clicked, screen };
+    useEffect(() => {
+
+        let handleClickOutside = event => {
+            if(!reference.current.contains(event.target) && !referenceButton.current.contains(event.target)) setClicked(false);
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+    }, [])
+
+    return { handleClick, handleBlur, clicked, screen, reference, referenceButton };
 
 }
 
 const ArticlePreview = ({ name, date }) => {
-    const { handleClick, handleBlur, clicked, screen } = ComponentLogic();
+    const { handleClick, handleBlur, clicked, screen, reference, referenceButton } = ComponentLogic();
 
     return (
         <div className="card">
@@ -46,10 +64,10 @@ const ArticlePreview = ({ name, date }) => {
                     <h5 className="card-name" tabIndex="0">{name}</h5>
                     <p className="card-date" tabIndex="0">{date}</p>
                 </div>
-                <button className={`card-button ${screen >= 1024 ? (clicked ? 'change-color-option1' : '') : ''}`} onClick={event => handleClick(event)}>
+                <button className={`card-button ${screen >= 1024 && clicked ? 'change-color-option1' : ''}`} ref={referenceButton} onClick={event => handleClick(event)}>
                    <img src={iconShare} className={`card-icon ${screen >= 1024 && clicked ?'card-icon-active' : ''}`} alt="Share icon - Press to check or close sharing options" />
                 </button>
-                <div className={`card-box ${screen >= 1024 && clicked ? '' : 'invisible'}`} aria-live="polite">
+                <div className={`card-box ${screen >= 1024 && clicked ? '' : 'invisible'}`} ref={reference} aria-live="polite">
                     <p className="card-legend" tabIndex="0">SHARE</p>
                     <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
                         <img src={iconFacebook} className="card-icon-facebook" alt="Share in Facebook" />
