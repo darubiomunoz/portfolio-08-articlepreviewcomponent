@@ -20,17 +20,12 @@ const ComponentLogic = () => {
         else setClicked(false);
     }
 
-    /* const handleClickOutside = event => {
-        if(reference.current && !reference.current.contains(event.target)) setClicked(false);
-    } */
-
     const handleBlur = event => {
         event.preventDefault();
         setClicked(false);
     }
 
     useEffect(() => {
-
         let handleClickOutside = event => {
             if(!reference.current.contains(event.target) && !referenceButton.current.contains(event.target)) setClicked(false);
         }
