@@ -128,8 +128,8 @@
 
 @media (min-width: 1024px) {
     .card {
-        width: 50%;
-        height: 30%;
+        width: 581.818px;
+        height: 196.364px;
         display: grid;
         grid-template-areas:
                     "image image image body body body body"
