@@ -21,7 +21,7 @@
     margin-bottom: 1.5rem;
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-bold);
-    color: var(--color-option2);
+    color: var(--color-option1);
 }
 
 .card-text {
@@ -55,7 +55,7 @@
 
 .card-name {
     font-weight: var(--font-weight-bold);
-    color: var(--color-option2);
+    color: var(--color-option1);
 }
 
 .card-date {
@@ -145,16 +145,25 @@
         border-top-left-radius: var(--border-radius-base);
         border-bottom-left-radius: var(--border-radius-base);
     }
-
-    .card-title {
-        font-size: 1.5rem;
-    }
     
     .card-body {
         grid-area: body;
         width: 100%;
         margin: 0;
         padding: 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-title {
+        font-size: 1.5rem;
+        color: var(--color-option1);
+    }
+
+    .card-text {
+        font-size: 1.2rem;
     }
 
     .card-info {
